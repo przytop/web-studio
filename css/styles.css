@@ -72,10 +72,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
-  position: absolute;
-  top: 16px;
-  left: 16px;
 }
 
 .header-logo .text {
@@ -152,8 +148,10 @@ button {
 
 /* ================== MOBILE MENU ================== */
 .mobile-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: fixed;
+  padding: 72px 16px 40px;
   left: 0;
   top: 0;
   width: 100%;
@@ -162,6 +160,7 @@ button {
   visibility: hidden;
   opacity: 0;
   z-index: 1;
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .mobile-menu-btn {
@@ -183,10 +182,12 @@ button {
 }
 
 .mobile-nav {
+  margin-bottom: auto;
+}
+
+.mobile-nav-list {
   display: flex;
   flex-direction: column;
-  margin-top: 72px;
-  margin-left: 16px;
   gap: 40px;
 }
 
@@ -206,8 +207,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 168px;
-  margin-left: 16px;
   font-style: normal;
 }
 
@@ -227,8 +226,6 @@ button {
   display: flex;
   gap: 40px;
   margin-top: 48px;
-  margin-left: 16px;
-  margin-bottom: 40px;
 }
 
 .mobile-social-media .social-element {
@@ -263,7 +260,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/officebg.jpg);
+    url(../images/background-mobile.jpg);
   padding: 72px 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -304,6 +301,16 @@ button {
 .top-button:hover,
 .top-button:focus {
   background-color: #404bbf;
+}
+
+@media (min-resolution: 192dpi) {
+  .top {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-mobile@2x.jpg);
+  }
 }
 
 /* ============================================ SECTION ADVANTAGES ======================================== */
@@ -382,7 +389,6 @@ button {
 
 .team-card {
   border-radius: 0px 0px 4px 4px;
-  padding: 0px 0px 32px 0px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: #ffffff;
@@ -390,7 +396,7 @@ button {
 }
 
 .team-card-info {
-  padding: 32px 0px 0px 0px;
+  padding: 32px 0px 32px 0px;
 }
 
 .team-info-title {
@@ -539,6 +545,7 @@ button {
 
 .footer-row {
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .row-logo {
@@ -564,6 +571,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.footer-social {
   margin-bottom: 72px;
 }
 
@@ -581,7 +591,6 @@ button {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-social-media .element {
@@ -857,16 +866,6 @@ button {
   opacity: 1;
 }
 
-@media (min-resolution: 192dpi) {
-  .top {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/officebg@2x.jpg);
-  }
-}
-
 @media (max-width: 767px) {
   .header-menu {
     display: none;
@@ -888,18 +887,9 @@ button {
     min-height: 72px;
   }
 
-  .header-nav {
-    margin-left: auto;
-  }
-
   .header-logo {
     display: flex;
-    position: absolute;
-    top: 25.5px;
-  }
-
-  .header-menu {
-    margin-left: 120px;
+    margin-right: 120px;
   }
 
   .header-address {
@@ -930,6 +920,11 @@ button {
   /* --TOP-- */
   .top {
     padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-tablet.jpg);
   }
 
   .top-title {
@@ -937,6 +932,16 @@ button {
     line-height: 1.07;
     margin: 0 auto 36px auto;
     max-width: 496px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .top {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-tablet@2x.jpg);
+    }
   }
 
   /* --SECTION ADVANTAGES-- */
@@ -1041,7 +1046,7 @@ button {
   .header-logo {
     position: relative;
     top: auto;
-    margin-right: auto;
+    margin-right: 76px;
   }
 
   .header-address {
@@ -1060,12 +1065,27 @@ button {
   /* --TOP-- */
   .top {
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-desktop.jpg);
   }
 
   .top-title {
     font-size: 56px;
     line-height: 1.07;
     margin: 0 auto 48px auto;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .top {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-desktop@2x.jpg);
+    }
   }
 
   /* --SECTION ADVANTAGES-- */
