@@ -137,9 +137,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 16px;
-  right: 16px;
 }
 
 .hamburger-button {
@@ -1053,7 +1050,6 @@ button {
     flex-direction: row;
     gap: 40px;
     padding: 24px 0;
-    margin-right: 156px;
   }
 
   .header-address-link {
@@ -1070,6 +1066,7 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/background-desktop.jpg);
+    max-width: 1440px;
   }
 
   .top-title {
@@ -1159,13 +1156,20 @@ button {
   .footer .container {
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
     padding-left: 15px;
+    column-gap: 0px;
   }
 
   .footer-row {
     text-align: left;
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+    margin-left: 120px;
+    margin-right: 80px;
   }
 
   .footer-social-title {
