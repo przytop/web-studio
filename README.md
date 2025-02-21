@@ -1,11 +1,18 @@
 # Web Studio
 
-This is a sample website for a web studio. It showcases modern web design principles using HTML and CSS.
+This project is a sample website for a web studio, designed to showcase web design principles and best practices. The website is built using clean and structured code, following the **BEM methodology**.
 
 ## Technologies Used
 
-- HTML
-- CSS
+- **HTML**
+- **CSS** (BEM methodology)
+- **JavaScript**
+
+## Features
+
+- **Responsive layout**: Optimized for various screen sizes and devices.
+- **Modern design**: A clean and minimalistic approach to web design.
+- **Structured codebase**: Organized CSS using the BEM methodology for better maintainability and scalability.
 
 ## Screenshots
 
