@@ -187,8 +187,8 @@ button {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -198,8 +198,8 @@ button {
 }
 
 .mobile-menu__icon {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
 }
 
 .mobile-menu__nav {
