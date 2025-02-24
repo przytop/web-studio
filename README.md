@@ -1,6 +1,7 @@
 # Web Studio
 
-This project is a sample website for a web studio, designed to showcase web design principles and best practices. The website is built using clean and structured code, following the **BEM methodology**.
+Web Studio is a sample website designed to showcase modern web design principles and best practices.  
+The project features a clean and structured codebase, following the **BEM methodology**.
 
 ## Technologies Used
 
@@ -16,13 +17,21 @@ This project is a sample website for a web studio, designed to showcase web desi
 
 ## Screenshots
 
-![Homepage](images/homepage.jpg)
+### Hero
 
-![Homepage](images/homepage2.jpg)
+![Hero](screenshots/hero.jpg)
 
-![Homepage](images/homepage3.jpg)
+### Team
 
-![Homepage](images/homepage4.jpg)
+![Team](screenshots/team.jpg)
+
+### Portfolio
+
+![Portfolio](screenshots/portfolio.jpg)
+
+### Contacts
+
+![Contacts](screenshots/contacts.jpg)
 
 ## Live Demo
 
